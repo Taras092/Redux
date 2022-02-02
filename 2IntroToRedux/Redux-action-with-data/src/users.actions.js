@@ -1,7 +1,7 @@
 import { initialState } from './store';
 
-export const ADD_USER = 'ADD__USER';
-export const DELETE_USER = 'DELETE_USER';
+export const ADD_USER = 'USERS/ADD__USER';
+export const DELETE_USER = 'USERS/DELETE_USER';
 
 export const addUser = user => {
   return {
