@@ -1,15 +1,15 @@
 import { initialState } from './store';
 
-export const ADD_USER = 'ADD__USER';
-export const DELETE_USER = 'DELETE_USER';
+export const ADD_USER = 'USERS/ADD__USER';
+export const DELETE_USER = 'USERS/DELETE_USER';
 
-export const addUser = user => {
+export const addUser = () => {
   return {
     type: ADD_USER,
   };
 };
 
-export const deleteUser = id => {
+export const deleteUser = () => {
   return {
     type: DELETE_USER,
   };
