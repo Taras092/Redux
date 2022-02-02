@@ -1,12 +1,12 @@
-import React from "react";
-import UserMenu from "./UserMenu";
+import React from 'react';
+import UserMenu from './UserMenu';
 
-const Header = ({ userData }) => {
-    return (
-      <header className="header">
-    <UserMenu userData={userData}/>
-  </header>
-    );
-}
+const Header = () => {
+  return (
+    <header className="header">
+        <UserMenu />
+    </header>
+  );
+};
 
 export default Header;
