@@ -1,12 +1,12 @@
 import store from './store';
-// import { addUser, deleteUser } from './users.reducer';
-import { addUser, deleteUser } from './users.actions';
+import { addUser, deleteUser } from './users.reducer';
+// import { addUser, deleteUser } from './users.actions';
 
 store.subscribe(() => {
   console.log(store.getState());
 });
 
-store.dispatch(addUser({ id: 1, name: 'Bob', age: 21 }));
+store.dispatch(addUser());
 store.dispatch(deleteUser(1));
 
 // store.subscribe(() => {
