@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 import { createReducer } from './users.reducer';
+import { actionsCreators } from './users.actions';
 
 export const ADD_USER = 'ADD__USER';
 export const DELETE_USER = 'DELETE_USER';
