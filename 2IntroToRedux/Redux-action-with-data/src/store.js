@@ -24,5 +24,6 @@ export const initialState = {
 };
 
 const store = createStore(createReducer);
+export const store1 = createStore(actionsCreators);
 
 export default store;
