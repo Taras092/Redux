@@ -1,6 +1,6 @@
 import { ADD_USER, DELETE_USER, initialState } from './store';
 
-export const createReducer = (state = initialState, action) => {
+export const actionsCreators = (state = initialState, action) => {
   switch (action.type) {
     case ADD_USER:
       return {
