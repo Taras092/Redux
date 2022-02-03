@@ -1,30 +1,12 @@
 import store from './store';
-import { addUser, deleteUser } from './users.reducer';
-// import { addUser, deleteUser } from './users.actions';
+import { addUser, deleteUser } from './users.actions';
 
 store.subscribe(() => {
   console.log(store.getState());
 });
 
-// const users = [
-//   { id: 1, name: 'Bob', age: 21 },
-//   { id: 2, name: 'Sam', age: 45 },
-//   { id: 3, name: 'Con', age: 22 },
-//   { id: 4, name: 'Man', age: 55 },
-//   { id: 5, name: 'Boy', age: 55 },
-//   { id: 6, name: 'Her', age: 31 },
-// ];
-
-// const newUsers = users.map(user => store.dispatch(addUser(user)));
-// console.log(newUsers);
-// store.dispatch(deleteUser(1));
-
-// store.dispatch(addUser());
-// store.dispatch(deleteUser(1));
-
-// store.subscribe(() => {
-//   console.log(store.getState());
-// });
-
-store.dispatch(addUser());
-store.dispatch(deleteUser());
+store.dispatch(addUser({ id: 1, name: 'Bob', age: 21 }));
+store.dispatch(addUser({ id: 2, name: 'Sam', age: 45 }));
+store.dispatch(addUser({ id: 3, name: 'Con', age: 22 }));
+store.dispatch(addUser({ id: 4, name: 'Man', age: 55 }));
+store.dispatch(deleteUser(2));
