@@ -1,19 +1,4 @@
-import { initialState } from './store';
-
-export const ADD_USER = 'USERS/ADD__USER';
-export const DELETE_USER = 'USERS/DELETE_USER';
-
-export const addUser = () => {
-  return {
-    type: ADD_USER,
-  };
-};
-
-export const deleteUser = () => {
-  return {
-    type: DELETE_USER,
-  };
-};
+import { initialState, ADD_USER, DELETE_USER } from './store';
 
 export const createReducer = (state = initialState, action) => {
   switch (action.type) {
