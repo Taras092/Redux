@@ -14,7 +14,3 @@ export const deleteUser = userId => {
     payload: { userId },
   };
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> af2a2c5b720796c809a2860d6af394a33bb6bd57
