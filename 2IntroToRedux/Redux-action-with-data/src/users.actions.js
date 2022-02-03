@@ -1,35 +1,17 @@
-import { initialState } from './store';
-
-export const ADD_USER = 'USERS/ADD__USER';
+export const ADD_USER = 'USERS/ADD_USER';
 export const DELETE_USER = 'USERS/DELETE_USER';
 
-export const addUser = user => {
+export const addUser = userData => {
   return {
     type: ADD_USER,
-    payload: { user },
+    payload: { userData },
   };
 };
 
-export const deleteUser = id => {
+export const deleteUser = userId => {
   return {
     type: DELETE_USER,
-    payload: { id },
+    payload: { userId },
   };
 };
 
-export const actionsCreators = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD_USER:
-      return {
-        ...state,
-        usersList: state.usersList.concat([action.payload]),
-      };
-    case DELETE_USER:
-      return {
-        ...state,
-        usersList: state.usersList.filter(user => user.id !== action.payload.id),
-      };
-    default:
-      return state;
-  }
-};
