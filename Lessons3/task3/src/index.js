@@ -10,7 +10,7 @@ store.subscribe(() => {
 store.dispatch(setUser({ name: 'Taras' }));
 
 
-// store.dispatch(addCart({ id: 1, name: 'Iphone 11'}));
-// store.dispatch(addCart({ id: 2, name: 'DELL 27' }));
-// store.dispatch(addCart({ id: 3, name: 'Samsung Galaxcy' }));
-// store.dispatch(deleteCart(1));
+store.dispatch(addCart({ id: 1, name: 'Iphone 11'}));
+store.dispatch(addCart({ id: 2, name: 'DELL 27' }));
+store.dispatch(addCart({ id: 3, name: 'Samsung Galaxcy' }));
+store.dispatch(deleteCart(1));
