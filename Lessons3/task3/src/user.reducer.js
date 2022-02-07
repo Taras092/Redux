@@ -1,5 +1,9 @@
 import { ADD_USER, REMOVE_USER } from './user.actions';
-import { initialState } from './store';
+// import { initialState } from './store';
+
+const initialState = {
+  user: null,
+};
 
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
