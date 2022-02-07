@@ -1,11 +1,11 @@
 import { ADD_CART, DELETE_CART } from './cart.actions';
-// import { initialState } from './store';
+import { initialState } from './store';
 
-const initialState = {
-  cart: {
-    products: [],
-  },
-};
+// const initialState = {
+//   cart: {
+//     products: [],
+//   },
+// };
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
