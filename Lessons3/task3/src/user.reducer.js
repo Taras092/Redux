@@ -1,31 +1,16 @@
-import { ADD_USER, REMOVE_USER } from './user.actions';
+import { SET_USER, REMOVE_USER } from './user.actions';
 
-const initialState = {
-  language: 'en',
-  user: null,
-  cart: {
-    products: [],
-  },
-};
+const intialState = null;
 
-const userReducer = (state = initialState, action) => {
+const usersReducer = (state = intialState, action) => {
   switch (action.type) {
-    case ADD_USER: {
-      return {
-        ...state,
-        user: action.payload.userData,
-      };
-    }
-    case REMOVE_USER: {
-      const newUser = state.user.filter(user => user.id !== action.payload.userId);
-      return {
-        ...state,
-        user: newUser,
-      };
-    }
+    case SET_USER:
+      return action.payload.userData;
+    case REMOVE_USER:
+      return null;
+
     default:
       return state;
   }
 };
-
-export default userReducer;
+export default usersReducer;
