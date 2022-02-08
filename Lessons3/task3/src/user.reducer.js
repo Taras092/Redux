@@ -1,7 +1,11 @@
 import { ADD_USER, REMOVE_USER } from './user.actions';
 
 const initialState = {
+  language: 'en',
   user: null,
+  cart: {
+    products: [],
+  },
 };
 
 const userReducer = (state = initialState, action) => {
