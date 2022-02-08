@@ -1,6 +1,8 @@
 import { ADD_CART, DELETE_CART } from './cart.actions';
 
 const initialState = {
+  language: 'en',
+  user: null,
   cart: {
     products: [],
   },
