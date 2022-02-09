@@ -2,7 +2,7 @@ import { GO_PREV, GO_NEXT } from './counter.actions';
 import users from '../users';
 
 const initialState = {
-  users: { usersList: [...users], currentPage: 0 },
+  users: { usersList: [...users], currentPage: 1 },
 };
 
 const counterReducer = (state = initialState, action) => {
