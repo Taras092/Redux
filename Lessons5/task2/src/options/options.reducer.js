@@ -21,7 +21,7 @@ const optionsMap = {
     id: 'id-4',
     name: 'Daytime running lights',
   },
-  'id-4': {
+  'id-5': {
     id: 'id-5',
     name: 'Auto High-Beam Headlamps',
   },
