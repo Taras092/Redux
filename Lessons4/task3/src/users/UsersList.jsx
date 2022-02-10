@@ -5,9 +5,9 @@ import Pagination from './Pagination.jsx';
 import * as counterActions from '../counter/counter.actions';
 
 const UsersList = ({ users, currentPage, goNext, goPrev }) => {
-  const itemPerpage = 3;
-  const startIndex = (currentPage - 1) * itemPerpage;
-  const endIndex = startIndex + itemPerpage;
+  const itemsPerPage = 3;
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
   const userToRender = users.slice(startIndex, endIndex);
 
   return (
@@ -16,7 +16,7 @@ const UsersList = ({ users, currentPage, goNext, goPrev }) => {
         currentPage={currentPage}
         goNext={goNext}
         goPrev={goPrev}
-        itemPerpage={itemPerpage}
+        itemsPerPage={itemsPerPage}
         totalItems={users.length}
       />
       <ul className="users">
