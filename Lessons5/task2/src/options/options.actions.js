@@ -5,6 +5,6 @@ export const toogleOption = optionId => {
     type: TOOGLE_OPTION,
     payload: {
       optionId,
-    }
+    },
   };
 };
